@@ -61,7 +61,7 @@
             Return isOK
             ' Return (New clsDA_Usuario).ValidarUsuario(objBE)
         Catch ex As Exception
-            isOK.Mensaje = "ERROR INESPERADO"
+            isOK.Mensaje = "ERROR INESPERADO: " & ex.Message
             Return isOK
 
         End Try
