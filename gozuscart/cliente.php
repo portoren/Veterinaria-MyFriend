@@ -4,7 +4,7 @@ require_once "cliente/RESTClient.php";
 
 $rest = new RESTclient();
 
-$url = "http://localhost:8080/gosus-rest/rs/producto-service/productos";
+$url = "http://gozus-rest.portoren.cloudbees.net/rs/producto-service/productos";
 $rest->createRequest("$url","GET");
 
 $rest->sendRequest();
