@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import clinicaveterinaria.excepcion.DAOExcepcion;
-import clinicaveterinaria.excepcion.LoginExcepcion;
 import clinicaveterinaria.modelo.Doctor;
-import clinicaveterinaria.negocio.GestionDoctor;
 import clinicaveterinaria.ws.login.Service1Stub;
 import clinicaveterinaria.ws.login.Service1Stub.ValidarUsuario;
 import clinicaveterinaria.ws.login.Service1Stub.ValidarUsuarioResponse;
