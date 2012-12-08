@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import junit.framework.Assert;
 import clinicaveterinaria.excepcion.DAOExcepcion;
 import clinicaveterinaria.modelo.CitaCabDet;
@@ -161,7 +162,7 @@ public class CitasPorClienteServlet extends HttpServlet {
 			}
 		} catch (DAOExcepcion e) {
 			
-			Assert.fail("Falló la actualización: " + e.getMessage());
+			Assert.fail("Fallo la actualizacion: " + e.getMessage());
 
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
