@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import junit.framework.Assert;
 import clinicaveterinaria.excepcion.DAOExcepcion;
 import clinicaveterinaria.modelo.Cliente;
 import clinicaveterinaria.negocio.GestionClientes;
@@ -49,8 +48,7 @@ public class AutoCompleteJQuery extends HttpServlet {
                 out.println(cliente.getIdCliente() + "|" + cliente.getNombre());
             }
        } catch (DAOExcepcion e) {
-       	Assert.fail("Fallo el listado: " + e.getMessage());
-       	
+    	   	System.out.println("Fallo el listado: " + e.getMessage());
 		} finally {
            out.close();
        }

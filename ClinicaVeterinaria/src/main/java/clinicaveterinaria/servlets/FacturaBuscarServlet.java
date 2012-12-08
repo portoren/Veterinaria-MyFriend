@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import junit.framework.Assert;
 import clinicaveterinaria.excepcion.DAOExcepcion;
 import clinicaveterinaria.modelo.Factura;
 import clinicaveterinaria.negocio.GestionFactura;
@@ -76,7 +75,7 @@ public class FacturaBuscarServlet extends HttpServlet {
 
 		} catch (DAOExcepcion e) {
 
-			Assert.fail("Fallo el listado: " + e.getMessage());
+			System.out.println("Fallo el listado: " + e.getMessage());
 
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block

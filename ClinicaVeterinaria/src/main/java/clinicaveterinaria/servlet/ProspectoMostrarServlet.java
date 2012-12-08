@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import junit.framework.Assert;
-
 import clinicaveterinaria.excepcion.DAOExcepcion;
 import clinicaveterinaria.modelo.Prospecto;
 import clinicaveterinaria.negocio.GestionProspectos;
@@ -61,7 +59,7 @@ public class ProspectoMostrarServlet extends HttpServlet {
 
 		} catch (DAOExcepcion e) {
 
-			Assert.fail("Fallo el listado: " + e.getMessage());
+			System.out.println("Fallo el listado: " + e.getMessage());
 
 		}
 	}
